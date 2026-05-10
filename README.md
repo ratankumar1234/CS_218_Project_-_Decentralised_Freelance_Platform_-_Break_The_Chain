@@ -9,12 +9,14 @@ A secure Web3 freelancing platform where clients can hire freelancers with **sma
 
 | Name | Roll Number |
 |---|---|
-| *D Sujith Reddy* | **240001028** |
-| *Malthum Thanush* | **240005028** |
-| *Raghav Sharma* | **240001056** |
-| *Ratan Kumar* | **240001059** |
-| *Sangati Chakradhar Reddy* | **240001063** |
-| *Shaik Riyaj* | **240001068** |
+| *DONDAPATI SUJITH REDDY* | **240001028** |
+| *RAGHAV SHARMA* | **240001056** |
+| *RATAN KUMAR* | **240001059** |
+| *SANGATI CHAKRADHAR REDDY* | **240001063** |
+| *SHAIK RIYAZ* | **240001068** |
+| *MALTHUM THANUSH* | **240005028** |
+
+---
 
 # ✨ Features
 
