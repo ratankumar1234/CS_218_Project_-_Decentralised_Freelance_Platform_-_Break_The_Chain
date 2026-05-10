@@ -28,6 +28,22 @@ A secure Web3 freelancing platform where clients can hire freelancers with **sma
 - ✅ **Hardhat local blockchain support**
 - ✅ **On-chain audit & fraud analysis**
 - ✅ **Fully decentralized architecture**
+- ---
+
+# 🌟 Additional Implemented Features
+
+- 🎭 **Separate UI and pages for Clients and Freelancers**
+- 🚨 **Fraud auditing system with suspicious account flagging**
+- 📋 **Dedicated service listing page for clients**
+- 🔍 **Search functionality for discovering services**
+- 📄 **Freelancer CV/Profile section**
+- 👤 **Detailed account pages with complete information**
+- ⭐ **Service sorting based on ratings and newest listings**
+- 🎨 **Enhanced and more modern frontend UI**
+- 📚 **History tracking for hired and offered services**
+- ❌ **Freelancers can unlist services only when no active contract exists**
+
+---
 
 ---
 
