@@ -1,4 +1,4 @@
-# Gas Optimisation Notes
+# Gas Optimisation
 
 Generated with:
 
