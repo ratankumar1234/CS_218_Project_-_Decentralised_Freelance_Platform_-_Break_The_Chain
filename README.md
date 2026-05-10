@@ -1,210 +1,338 @@
-🚀 Decentralized Freelance Platform
+# 🚀 Decentralized Freelance Platform
 
-💼 Escrow-backed decentralized freelance marketplace built using Solidity, Hardhat, Next.js, Ethers.js, and MetaMask.
+> ### *Escrow-backed decentralized freelance marketplace built using Solidity, Hardhat, Next.js, Ethers.js, and MetaMask.*
 
-A secure Web3 freelancing platform where clients can hire freelancers with smart contract escrow protection, ensuring fairness, transparency, and trustless payments on the blockchain 🔗
+A secure Web3 freelancing platform where clients can hire freelancers with **smart contract escrow protection**, ensuring transparency, fairness, and trustless payments on the blockchain 🔗
 
-✨ Features
+---
+# *Break the Chain* 💥
 
-✅ Secure escrow-based payments
-✅ Smart contract powered workflow
-✅ Freelancer reputation system ⭐
-✅ Automatic refund handling
-✅ MetaMask wallet integration 🦊
-✅ Hardhat local blockchain support
-✅ On-chain audit & fraud analysis
-✅ Fully decentralized architecture 🌐
+| Name | Roll Number |
+|---|---|
+| *D Sujith Reddy* | **240001028** |
+| *Malthum Thanush* | **240005028** |
+| *Raghav Sharma* | **240001056** |
+| *Ratan Kumar* | **240001059** |
+| *Sangati Chakradhar Reddy* | **240001063** |
+| *Shaik Riyaj* | **240001068** |
 
-🛠️ Tech Stack
-Technology	Purpose
-Solidity	Smart Contract Development
-Hardhat	Ethereum Development Environment
-Next.js	Frontend Framework
-Ethers.js	Blockchain Interaction
-MetaMask	Wallet Integration
-OpenZeppelin	Smart Contract Security
-📂 Project Setup (Run Locally)
-📌 Prerequisites
+# ✨ Features
 
-Make sure you have installed:
+- ✅ **Secure escrow-based payments**
+- ✅ **Smart contract powered workflow**
+- ✅ **Freelancer reputation system**
+- ✅ **Automatic refund handling**
+- ✅ **MetaMask wallet integration**
+- ✅ **Hardhat local blockchain support**
+- ✅ **On-chain audit & fraud analysis**
+- ✅ **Fully decentralized architecture**
 
-Node.js
-npm
-MetaMask Extension
-⚡ Run the Project Locally
+---
 
-Open three PowerShell terminals inside your project folder.
+# 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **Solidity** | Smart Contract Development |
+| **Hardhat** | Ethereum Development Environment |
+| **Next.js** | Frontend Framework |
+| **Ethers.js** | Blockchain Interaction |
+| **MetaMask** | Wallet Integration |
+| **OpenZeppelin** | Smart Contract Security |
+
+---
+
+# 📂 Run Project Locally
+
+## 📌 Prerequisites
+
+Make sure the following are installed:
+
+- **Node.js**
+- **npm**
+- **MetaMask Browser Extension**
+
+---
+
+# ⚡ Step-by-Step Setup
+
+Open **three PowerShell terminals** inside your project folder.
 
 Example:
 
+```powershell
 cd C:\Projects\DecentralizedFreelancePlatform
-🧱 Terminal 1 — Start Local Blockchain
+```
+
+---
+
+# 🧱 Terminal 1 — Start Local Blockchain
+
+```bash
 npm install
 npm run compile
 npm run node
+```
 
-✅ Keep this terminal running.
+Keep this terminal running.
 
-Hardhat will generate 20 demo accounts along with their private keys for testing.
+Hardhat will generate **20 demo accounts** and private keys for testing.
 
-⚠️ If Port 8545 Is Already In Use
+---
 
-Sometimes another hidden Hardhat node may already be running.
+## ⚠️ If Port 8545 Is Already In Use
 
-Run:
-
+```powershell
 Get-NetTCPConnection -LocalPort 8545 -State Listen | Select-Object OwningProcess
 Stop-Process -Id <OwningProcess> -Force
-🔑 Print Demo Accounts Again
+```
+
+---
+
+## 🔑 Print Demo Accounts Again
+
+```bash
 npm run accounts
-📦 Terminal 2 — Deploy Smart Contract
+```
+
+---
+
+# 📦 Terminal 2 — Deploy Smart Contract
+
+```bash
 npm run deploy:localhost
+```
 
-This deploys the smart contract locally and writes the deployed contract address to:
+This writes the deployed contract address to:
 
+```bash
 lib/deployment.json
-🌐 Terminal 3 — Start Frontend
+```
+
+---
+
+# 🌐 Terminal 3 — Start Frontend
+
+```bash
 npm run dev
+```
 
-Now open:
+Open:
 
+```bash
 http://localhost:3000
+```
 
-🎯 Choose a role first, then connect MetaMask.
+Choose a role first, then connect MetaMask 🦊
 
-🧹 Fix Frontend Errors (If Any)
+---
 
-If the frontend shows a 500 error or does not load correctly after switching between build/dev modes:
+# 🧹 Fix Frontend Errors
 
+If the frontend shows a **500 error** or does not load properly:
+
+```bash
 npm run clean
 npm run dev
+```
 
 Then reopen:
 
+```bash
 http://localhost:3000
-🦊 MetaMask Setup
+```
 
-Add a custom network in MetaMask:
+---
 
-Setting	Value
-Network Name	Hardhat Local
-RPC URL	http://127.0.0.1:8545
+# 🦊 MetaMask Setup
 
-Chain ID	31337
-Currency Symbol	ETH
-🔐 Import Wallet
-Copy one private key from Terminal 1
-Import it into MetaMask
-Refresh the dApp
+Add a custom network using these values:
+
+| Setting | Value |
+|---|---|
+| **Network Name** | Hardhat Local |
+| **RPC URL** | http://127.0.0.1:8545 |
+| **Chain ID** | 31337 |
+| **Currency Symbol** | ETH |
+
+---
+
+# 🔐 Import Wallet
+
+1. Copy one private key from Terminal 1  
+2. Import it into MetaMask  
+3. Refresh the dApp  
 
 ✅ You are ready to use the platform.
 
-📜 Smart Contract Design
-🛠️ Core Functions
-offerService(priceWei, metadataCid)
+---
+
+# 📜 Smart Contract Design
+
+## *Core Functions*
+
+### **offerService(priceWei, metadataCid)**
 
 Stores:
 
-Service price
-Freelancer wallet
-Status
-Timestamp
-IPFS metadata CID
-hireFreelancer(serviceId, deadlineTimestamp)
-Requires exact ETH escrow
-Creates a job entry
-Emits JobCreated
-submitWork(jobId, deliverableHash)
+- Service price
+- Freelancer wallet
+- Status
+- Timestamp
+- IPFS metadata CID
 
-Stores a bytes32 hash commitment for submitted work.
+---
 
-confirmCompletion(jobId)
-Client-only function
-Protected against reentrancy
-Releases escrow payment to freelancer
-rateFreelancer(jobId, score)
-Rating allowed only once
-Score range: 1–5
-Updates freelancer reputation
-cancelJob(jobId)
+### **hireFreelancer(serviceId, deadlineTimestamp)**
+
+- Requires exact ETH escrow
+- Emits `JobCreated`
+
+---
+
+### **submitWork(jobId, deliverableHash)**
+
+Stores a `bytes32` commitment for submitted work.
+
+---
+
+### **confirmCompletion(jobId)**
+
+- Client-only function
+- Reentrancy protected
+- Releases escrow to freelancer
+
+---
+
+### **rateFreelancer(jobId, score)**
+
+- Rating allowed only once
+- Score range: `1–5`
+- Updates freelancer reputation
+
+---
+
+### **cancelJob(jobId)**
 
 Allows cancellation before submission and refunds the client.
 
-autoCancelExpired(jobId)
+---
 
-Automatically refunds inactive jobs after deadline expiry.
+### **autoCancelExpired(jobId)**
 
-auditClient(client)
+Refunds inactive jobs after deadline expiry.
+
+---
+
+### **auditClient(client)**
 
 Returns:
 
-Client history
-Escrow totals
-Risk score
-Fraud indicators
-🔗 On-Chain vs Off-Chain Storage
-✅ Stored On-Chain
-Wallet addresses
-Service IDs
-Job IDs
-Prices
-Ratings
-Escrow totals
-Status
-Timestamps
-Metadata CID
-Deliverable hash
-☁️ Stored Off-Chain
-Service descriptions
-Portfolio files
-Chat data
-Profile details
-Deliverable files
-Banking/email information
-🔒 Security Features
+- Client history
+- Escrow totals
+- Risk score
+- Fraud indicators
 
-🛡️ OpenZeppelin ReentrancyGuard protection
-🛡️ Escrow locked before work submission
-🛡️ State updated before ETH transfer
-🛡️ Client-only payment release
-🛡️ One-time verified ratings
-🛡️ Real on-chain audit data (no fake frontend data)
+---
 
-📊 Reports & Testing
-⛽ Generate Gas Report
+# 🔗 On-Chain vs Off-Chain
+
+## ✅ Stored On-Chain
+
+- Wallet addresses
+- Service IDs
+- Job IDs
+- Prices
+- Ratings
+- Escrow totals
+- Status
+- Timestamps
+- Metadata CID
+- Deliverable hash
+
+---
+
+## ☁️ Stored Off-Chain
+
+- Service descriptions
+- Portfolio files
+- Chat data
+- Profile details
+- Deliverable files
+- Banking/email information
+
+---
+
+# 🔒 Security Features
+
+- 🛡️ **OpenZeppelin ReentrancyGuard protection**
+- 🛡️ **Escrow locked before work submission**
+- 🛡️ **State updated before ETH transfer**
+- 🛡️ **Client-only payment release**
+- 🛡️ **One-time verified ratings**
+- 🛡️ **Real on-chain audit data**
+
+---
+
+# 📊 Reports & Testing
+
+## ⛽ Generate Gas Report
+
+```bash
 npm run gas
-⚙️ Generate Unoptimized Gas Report
+```
+
+---
+
+## ⚙️ Generate Unoptimized Gas Report
+
+```bash
 npm run gas:unoptimized
-🧪 Generate Test Coverage
+```
+
+---
+
+## 🧪 Generate Coverage Report
+
+```bash
 npm run coverage
-👨‍💻 Team Details — Break the Chain
-🎓 Team Members
-Name	Roll Number
-Malthum Thanush	240005028
-Raghav Sharma	240001056
-Ratan Kumar	240001059
-Sangati Chakradhar Reddy	240001063
-Shaik Riyaj	240001068
-D Sujith Reddy	240001028
-🌟 Project Vision
+```
 
-The goal of this project is to build a trustless freelance ecosystem where freelancers and clients can collaborate securely without relying on centralized intermediaries.
+---
 
-By leveraging blockchain technology, escrow smart contracts, and transparent reputation systems, the platform ensures:
+# 👨‍💻 Team Details
 
-Fair payments 💰
-Reduced fraud 🚫
-Transparent interactions 🔍
-Decentralized ownership 🌐
-📌 Future Improvements
+# *Break the Chain* 💥
 
-🚀 IPFS file upload integration
-🚀 DAO-based dispute resolution
-🚀 Multi-chain deployment
-🚀 AI-powered freelancer recommendations
-🚀 NFT-based freelancer portfolios
+| Name | Roll Number |
+|---|---|
+| *D Sujith Reddy* | **240001028** |
+| *Malthum Thanush* | **240005028** |
+| *Raghav Sharma* | **240001056** |
+| *Ratan Kumar* | **240001059** |
+| *Sangati Chakradhar Reddy* | **240001063** |
+| *Shaik Riyaj* | **240001068** |
 
-❤️ Built With Passion By
-Break the Chain 💥
+---
 
-“Decentralization is not just technology — it’s trust rewritten.”
+# 🌟 Project Vision
+
+> *To build a decentralized freelance ecosystem that ensures fairness, transparency, secure payments, and trustless collaboration using blockchain technology.*
+
+---
+
+# 🚀 Future Improvements
+
+- 🌐 IPFS File Upload Integration
+- ⚖️ DAO-Based Dispute Resolution
+- 🔗 Multi-Chain Deployment
+- 🤖 AI-Powered Freelancer Recommendations
+- 🖼️ NFT-Based Freelancer Portfolios
+
+---
+
+# ❤️ Built With Passion By
+
+# *Break the Chain*
+
+> ### *“Decentralization is not just technology — it’s trust rewritten.”*
