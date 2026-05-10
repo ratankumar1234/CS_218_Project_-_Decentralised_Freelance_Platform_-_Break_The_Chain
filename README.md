@@ -5,16 +5,17 @@
 A secure Web3 freelancing platform where clients can hire freelancers with **smart contract escrow protection**, ensuring transparency, fairness, and trustless payments on the blockchain 🔗
 
 ---
+
 # *Break the Chain* 💥
 
 | Name | Roll Number |
 |---|---|
 | *DONDAPATI SUJITH REDDY* | **240001028** |
+| *MALTHUM THANUSH* | **240005028** |
 | *RAGHAV SHARMA* | **240001056** |
 | *RATAN KUMAR* | **240001059** |
 | *SANGATI CHAKRADHAR REDDY* | **240001063** |
 | *SHAIK RIYAZ* | **240001068** |
-| *MALTHUM THANUSH* | **240005028** |
 
 ---
 
@@ -28,7 +29,8 @@ A secure Web3 freelancing platform where clients can hire freelancers with **sma
 - ✅ **Hardhat local blockchain support**
 - ✅ **On-chain audit & fraud analysis**
 - ✅ **Fully decentralized architecture**
-- ---
+
+---
 
 # 🌟 Additional Implemented Features
 
@@ -44,6 +46,17 @@ A secure Web3 freelancing platform where clients can hire freelancers with **sma
 - ❌ **Freelancers can unlist services only when no active contract exists**
 
 ---
+
+# 💡 Additional Functionalities
+
+- 📝 **Freelancers can create service listings with title, description, pricing, and deadlines**
+- 🌐 **Marketplace displays active services available across the platform**
+- 📊 **Average freelancer ratings and total ratings are visible alongside services**
+- 👀 **Clients can view complete details of hired services**
+- 📂 **Freelancers can manage and monitor all services they offer**
+- ⏳ **Clients can claim refunds automatically if deadlines expire without completion**
+- 🔄 **Role-based workflow with dedicated Freelancer Mode and Client Mode**
+- 📈 **Service status tracking for both clients and freelancers**
 
 ---
 
@@ -292,6 +305,22 @@ Returns:
 
 ---
 
+# 🧪 Testing
+
+Run smart contract tests using:
+
+```bash
+npm test
+```
+
+or
+
+```bash
+npx hardhat test
+```
+
+---
+
 # 📊 Reports & Testing
 
 ## ⛽ Generate Gas Report
@@ -318,21 +347,6 @@ npm run coverage
 
 ---
 
-# 👨‍💻 Team Details
-
-# *Break the Chain* 💥
-
-| Name | Roll Number |
-|---|---|
-| *D Sujith Reddy* | **240001028** |
-| *Malthum Thanush* | **240005028** |
-| *Raghav Sharma* | **240001056** |
-| *Ratan Kumar* | **240001059** |
-| *Sangati Chakradhar Reddy* | **240001063** |
-| *Shaik Riyaj* | **240001068** |
-
----
-
 # 🌟 Project Vision
 
 > *To build a decentralized freelance ecosystem that ensures fairness, transparency, secure payments, and trustless collaboration using blockchain technology.*
@@ -351,6 +365,6 @@ npm run coverage
 
 # ❤️ Built With Passion By
 
-# *Break the Chain*
+# *Break the Chain* 💥
 
 > ### *“Decentralization is not just technology — it’s trust rewritten.”*
