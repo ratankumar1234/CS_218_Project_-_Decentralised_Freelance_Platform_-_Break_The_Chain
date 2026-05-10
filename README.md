@@ -11,11 +11,11 @@ A secure Web3 freelancing platform where clients can hire freelancers with **sma
 | Name | Roll Number |
 |---|---|
 | *DONDAPATI SUJITH REDDY* | **240001028** |
-| *MALTHUM THANUSH* | **240005028** |
 | *RAGHAV SHARMA* | **240001056** |
 | *RATAN KUMAR* | **240001059** |
 | *SANGATI CHAKRADHAR REDDY* | **240001063** |
 | *SHAIK RIYAZ* | **240001068** |
+| *MALTHUM THANUSH* | **240005028** |
 
 ---
 
