@@ -8,7 +8,7 @@ A secure Web3 freelancing platform where clients can hire freelancers with **sma
 
 # *Break the Chain* 💥
 
-| Name | Roll Number |
+| Name | Roll Number |  ||
 |---|---|
 | *DONDAPATI SUJITH REDDY* | **240001028** |
 | *RAGHAV SHARMA* | **240001056** |
